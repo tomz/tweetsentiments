@@ -1,6 +1,44 @@
 = tweetsentiments
 
-Description goes here.
+Ruby Gem to access the tweetsentiments.com API.
+
+== Install
+
+		gem install tweetsentiments
+
+== Usage
+
+		require 'tweetsentiments'
+
+		Tweetsentiments.analyze "I am happy"
+		=> {"sentiment"=>{"value"=>1, "name"=>"Positive"}} 
+
+		Tweetsentiments.analyze "I am sad"
+		=> {"sentiment"=>{"value"=>-1, "name"=>"Negative"}}
+
+		Tweetsentiments.analyze "I am going to work"
+		=> {"sentiment"=>{"value"=>0, "name"=>"Neutral"}}
+
+		res = Tweetsentiments.search :topic => "comcast"
+
+		res["sentiment_index"]
+ 		=> 47.0 
+
+		res["negative"]
+ 		=> 32
+ 
+		res["positive"]
+ 		=> 26
+ 
+		res["neutral"]
+ 		=> 42 
+
+		res["results"][0]["sentiment"]
+ 		=> -1
+
+		Tweetsentiments.search :user => "cnnbrk"
+
+
 
 == Contributing to tweetsentiments
  
@@ -14,6 +52,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Yong Gu. See LICENSE.txt for
+Copyright (c) 2011 Intridea. See LICENSE.txt for
 further details.
 

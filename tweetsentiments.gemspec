@@ -32,12 +32,17 @@ Gem::Specification.new do |s|
     "lib/tweetsentiments/client.rb",
     "lib/tweetsentiments/configuration.rb",
     "lib/tweetsentiments/connection.rb",
+    "lib/tweetsentiments/error.rb",
     "lib/tweetsentiments/request.rb",
     "lib/tweetsentiments/version.rb",
+    "spec/fixtures/analyze.json",
+    "spec/fixtures/analyze.xml",
     "spec/fixtures/classify.json",
     "spec/fixtures/classify.xml",
     "spec/fixtures/classify_simple.json",
     "spec/fixtures/classify_simple.xml",
+    "spec/fixtures/search.json",
+    "spec/fixtures/search.xml",
     "spec/spec_helper.rb",
     "spec/tweetsentiments/client_spec.rb",
     "spec/tweetsentiments_spec.rb",
@@ -56,13 +61,13 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<faraday>, [">= 0"])
       s.add_runtime_dependency(%q<faraday_middleware>, [">= 0"])
       s.add_runtime_dependency(%q<multi_xml>, [">= 0"])
+      s.add_runtime_dependency(%q<multi_json>, [">= 0"])
       s.add_runtime_dependency(%q<hashie>, [">= 0"])
       s.add_development_dependency(%q<json>, [">= 0"])
       s.add_development_dependency(%q<ZenTest>, [">= 0"])
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<shoulda>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_development_dependency(%q<jeweler>, [">= 1.5.1"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<faraday>, [">= 0"])
@@ -72,13 +77,13 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<faraday>, [">= 0"])
       s.add_dependency(%q<faraday_middleware>, [">= 0"])
       s.add_dependency(%q<multi_xml>, [">= 0"])
+      s.add_dependency(%q<multi_json>, [">= 0"])
       s.add_dependency(%q<hashie>, [">= 0"])
       s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<ZenTest>, [">= 0"])
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<shoulda>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_dependency(%q<jeweler>, [">= 1.5.1"])
       s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<faraday>, [">= 0"])
@@ -89,13 +94,13 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<faraday>, [">= 0"])
     s.add_dependency(%q<faraday_middleware>, [">= 0"])
     s.add_dependency(%q<multi_xml>, [">= 0"])
+    s.add_dependency(%q<multi_json>, [">= 0"])
     s.add_dependency(%q<hashie>, [">= 0"])
     s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<ZenTest>, [">= 0"])
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<shoulda>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+    s.add_dependency(%q<bundler>, [">= 1.0.0"])
     s.add_dependency(%q<jeweler>, [">= 1.5.1"])
     s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<faraday>, [">= 0"])
