@@ -6,7 +6,7 @@ module Tweetsentiments
     VALID_FORMATS = [:json, :xml].freeze
 
     DEFAULT_FORMAT = :json.freeze
-    DEFAULT_ENDPOINT = 'http://api.tweetsentiments.com/api/'.freeze
+    DEFAULT_ENDPOINT = 'http://api.tweetsentiments.com:8080/api/'.freeze
     DEFAULT_USER_AGENT = "Tweetsentiments Ruby Gem #{Tweetsentiments::VERSION}".freeze
     DEFAULT_PROXY = nil.freeze
     DEFAULT_ADAPTER = Faraday.default_adapter.freeze

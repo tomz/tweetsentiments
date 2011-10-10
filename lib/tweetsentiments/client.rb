@@ -6,5 +6,11 @@ module Tweetsentiments
     def classify_simple(text, options={})
       response = get("classify_simple", options.merge(:text => text))
     end
+    def analyze(text, options={})
+      response = get("analyze", options.merge(:text => text))
+    end
+    def search(options={})
+      response = get("search", options)
+    end
   end
 end

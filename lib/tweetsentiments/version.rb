@@ -1,3 +1,3 @@
 module Tweetsentiments
-  VERSION = '0.1.0' unless defined?(Tweetsentiments::VERSION)
+  VERSION = '0.1.1' unless defined?(Tweetsentiments::VERSION)
 end
