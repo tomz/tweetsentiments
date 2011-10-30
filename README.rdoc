@@ -38,7 +38,14 @@ Ruby Gem to access the tweetsentiments.com API.
 
   Tweetsentiments.search :user => "cnnbrk"
 
+  Tweetsentiments.lang_detect "this is a test"
+  => {"lang"=>"en"} 
+  
+  Tweetsentiments.lang_detect "中文"
+  => {"lang"=>"zh-cn"} 
 
+  Tweetsentiments.lang_detect "ひらがな"
+  => {"lang"=>"ja"}
 
 == Contributing to tweetsentiments
  
