@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "tweetsentiments"
-  s.version = "0.2.0"
+  s.name = %q{tweetsentiments}
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yong Gu", "Tom Zeng"]
-  s.date = "2011-10-30"
-  s.description = "A Ruby wrapper for the www.tweetsentiments.com REST APIs"
-  s.email = "tom@intridea.com"
+  s.date = %q{2011-10-30}
+  s.description = %q{A Ruby wrapper for the www.tweetsentiments.com REST APIs}
+  s.email = %q{tom@intridea.com, yonggu@intridea.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -48,13 +48,14 @@ Gem::Specification.new do |s|
     "spec/tweetsentiments_spec.rb",
     "tweetsentiments.gemspec"
   ]
-  s.homepage = "https://github.com/tomz/tweetsentiments"
+  s.homepage = %q{https://github.com/tomz/tweetsentiments}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.11"
-  s.summary = "A Ruby wrapper for the www.tweetsentiments.com REST APIS"
+  s.rubygems_version = %q{1.3.7}
+  s.summary = %q{A Ruby wrapper for the www.tweetsentiments.com REST APIS}
 
   if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
