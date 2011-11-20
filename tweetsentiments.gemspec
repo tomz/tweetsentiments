@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tweetsentiments}
-  s.version = "0.1.1"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yong Gu", "Tom Zeng"]
-  s.date = %q{2011-10-30}
+  s.date = %q{2011-11-20}
   s.description = %q{A Ruby wrapper for the www.tweetsentiments.com REST APIs}
   s.email = %q{tom@intridea.com, yonggu@intridea.com}
   s.extra_rdoc_files = [
